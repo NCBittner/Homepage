@@ -1,0 +1,42 @@
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Lebenslauf {
+  background-color:#c62828;
+  text-shadow: 2px 2px 2px #000;
+}
+#Bildung {
+  background-color:#2e7d32;
+  text-shadow: 2px 2px 2px #000;
+}
+
+#Praktikas {
+  background-color:#2962ff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+#Kontaktdaten {
+  background-color:#e65100;
+  text-shadow: 2px 2px 2px #000;
+}

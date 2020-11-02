@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="template.css"
   </head>
   <body>
-    <h1>Willkommen auf meiner Webseite</h1>
-    <p>made by Nicole Cristina Bittner</p>
+
+    <div id="Lebenslauf" class="tabcontent">
+      <h1>Lebenslauf</h1>
+    </div>
+
+    <div id="Bildung" class="tabcontent">
+      <h1>Bildung</h1>
+    </div>
+
+    <div id="Praktikas" class="tabcontent">
+      <h1>Praktikas</h1>
+    </div>
+
+    <div id="Kontaktdaten" class="tabcontent">
+      <h1>Kontaktdaten</h1>
+    </div>
+
+    <button class="tablink" onclick="openCity('Lebenslauf', this, '#c62828')" id="defaultOpen">Lebenslauf</button>
+    <button class="tablink" onclick="openCity('Bildung', this, '#2e7d32')">Bildung</button>
+    <button class="tablink" onclick="openCity('Praktikas', this, '#2962ff')">Praktikas</button>
+    <button class="tablink" onclick="openCity('Kontaktdaten', this, '#e65100')">Kontaktdaten</button>
+
+    <script>
+    function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    }
+// Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+    
+
   </body>
 </html>
