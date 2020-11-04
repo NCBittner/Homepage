@@ -1,3 +1,232 @@
+@charset "UTF-8";
+
+/* Fonts */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at4bN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/1pO9eUAp8pSF8VnRTP3xnvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0YbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC4bN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+/* Document */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+  background: #FAFAFA;
+  color: #424242;
+  font-family: 'Roboto', Arial, Verdana, Helvetica;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #212121;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+/* Header Styles */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: calc(4.2rem / 1.5) 0 calc(4.2rem / 2.5) 0;
+}
+
+h2 {
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: calc(3.56rem / 1.5) 0 calc(3.56rem / 2.5) 0;
+}
+
+h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: calc(2.92rem / 1.5) 0 calc(2.92rem / 2.5) 0;
+}
+
+h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: calc(2.28rem / 1.5) 0 calc(2.28rem / 2.5) 0;
+}
+
+h5 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0;
+}
+
+h6 {
+  font-size: 1.15rem;
+  line-height: 110%;
+  margin: calc(1.15rem / 1.5) 0 calc(1.15rem / 2.5) 0;
+}
+
+/* Typography */
+.subheading {
+  font-size: 16px;
+}
+
+.caption {
+  color: #757575;
+  font-size: 0.75em;
+}
+
+.underline {
+  text-decoration: underline
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+sup, sub {
+  font-size: 0.75em;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  top: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus, a:hover {
+  color: #212121;
+}
+
+p {
+  padding: 0 0 16px;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table-responsive .table {
+  min-width: 512px;
+}
+
+/* Floating */
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clr {
+  clear: both;
+}
+
+/* Template */
+#tabcontent {
+  color: #FFF;
+  font-size: 4em;
+  padding: 50px;
+  text-align: center;
+}
+
+#tabcontent.lebenslauf {
+  background-color:#c62828;
+  text-shadow: 2px 2px 2px #000;
+}
+#tabcontent.bildung {
+  background-color:#2e7d32;
+  text-shadow: 2px 2px 2px #000;
+}
+
+#tabcontent.praktikas {
+  background-color:#2962ff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+#tabcontent.kontaktdaten {
+  background-color:#e65100;
+  text-shadow: 2px 2px 2px #000;
+}
+
 .tablink {
   background-color: #555;
   color: white;
@@ -10,33 +239,37 @@
   width: 25%;
 }
 
+body[data-tab=lebenslauf] .tablink.lebenslauf {
+  background-color:#c62828;
+}
+
+body[data-tab=bildung] .tablink.bildung {
+  background-color:#2e7d32;
+}
+
+body[data-tab=praktikas] .tablink.praktikas {
+  background-color:#2962ff;
+}
+
+body[data-tab=kontaktdaten] .tablink.kontaktdaten {
+  background-color:#e65100;
+}
+
 .tablink:hover {
   background-color: #777;
 }
 
-/* Style the tab content */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 50px;
-  text-align: center;
+main {
+  max-width: 1280px;
+  background: #FFF;
+  margin: 4em auto 0;
+  padding: 16px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-#Lebenslauf {
-  background-color:#c62828;
-  text-shadow: 2px 2px 2px #000;
-}
-#Bildung {
-  background-color:#2e7d32;
-  text-shadow: 2px 2px 2px #000;
-}
-
-#Praktikas {
-  background-color:#2962ff;
-  text-shadow: 2px 2px 2px #000;
-}
-
-#Kontaktdaten {
-  background-color:#e65100;
-  text-shadow: 2px 2px 2px #000;
-}
+/* Lebenslauf */
+table.table-lebenslauf tr > td:first-child {
+   width: 20%;
+ }
