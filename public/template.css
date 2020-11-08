@@ -273,3 +273,24 @@ main {
 table.table-lebenslauf tr > td:first-child {
    width: 20%;
  }
+
+footer {
+  padding: 8px 0 16px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.87em;
+  text-align: center;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 3px;
+  height: 250px;
+  position: absolute;
+  top: 350px;
+  right: 16px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
