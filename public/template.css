@@ -275,8 +275,8 @@ main {
 }
 
 /* Lebenslauf */
-table.table-lebenslauf tr > td:first-child {
-   width: 20%;
+table tr > td:first-child {
+   width: 300px;
  }
 
 footer {
