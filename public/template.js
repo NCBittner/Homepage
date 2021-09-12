@@ -16,7 +16,7 @@ function openTab(tabLink) {
     }
   }
 
-  xhr.open('GET', '/partly/' + target + '.html', true);
+  xhr.open('GET', 'partly/' + target + '.html', true);
   xhr.setRequestHeader('Content-Type', 'text/html');
   xhr.send();
 }
