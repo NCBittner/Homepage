@@ -243,11 +243,11 @@ body[data-tab=lebenslauf] .tablink.lebenslauf {
   background-color:#c62828;
 }
 
-body[data-tab=bildungsweg] .tablink.bildung {
+body[data-tab=bildungsweg] .tablink.bildungsweg {
   background-color:#2e7d32;
 }
 
-body[data-tab=berufserfahrung] .tablink.praktika {
+body[data-tab=berufserfahrung] .tablink.berufserfahrung {
   background-color:#2962ff;
 }
 
