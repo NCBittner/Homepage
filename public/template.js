@@ -1,11 +1,12 @@
 function openTab(tabLink) {
-  let tabContent = document.getElementById('tabcontent');
-  let target     = tabLink.dataset.target;
+  let tabtitle = document.getElementById('tabtitle');
+  let target   = tabLink.dataset.target;
+  let header   = document.querySelector('header');
 
   // Set target into body attribute and as tab content
   document.body.dataset.tab = target;
-  tabContent.innerText = tabLink.innerText;
-  tabContent.className = target;
+  tabtitle.innerText = tabLink.innerText;
+  header.className = target;
 
   // Load content
   let xhr = new XMLHttpRequest();

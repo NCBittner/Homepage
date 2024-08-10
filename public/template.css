@@ -73,7 +73,7 @@ body {
   background: #FAFAFA;
   color: #424242;
   font-family: 'Roboto', Arial, Verdana, Helvetica;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -89,42 +89,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
 }
 
-h1 {
-  font-size: 2.92rem;
-  line-height: 110%;
-  margin: calc(4.2rem / 1.5) 0 calc(4.2rem / 2.5) 0;
-}
-
-h2 {
-  font-size: 3.56rem;
-  line-height: 110%;
-  margin: calc(3.56rem / 1.5) 0 calc(3.56rem / 2.5) 0;
-}
-
-h3 {
-  font-size: 2.28rem;
-  line-height: 110%;
-  margin: calc(2.92rem / 1.5) 0 calc(2.92rem / 2.5) 0;
-}
-
-h4 {
-  font-size: 2.28rem;
-  line-height: 110%;
-  margin: calc(2.28rem / 1.5) 0 calc(2.28rem / 2.5) 0;
-}
-
-h5 {
-  font-size: 1.64rem;
-  line-height: 110%;
-  margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0;
-}
-
-h6 {
-  font-size: 1.15rem;
-  line-height: 110%;
-  margin: calc(1.15rem / 1.5) 0 calc(1.15rem / 2.5) 0;
-}
-
 /* Typography */
 .subheading {
   font-size: 16px;
@@ -133,10 +97,6 @@ h6 {
 .caption {
   color: #757575;
   font-size: 0.75em;
-}
-
-.underline {
-  text-decoration: underline
 }
 
 strong, b {
@@ -201,100 +161,193 @@ p {
 }
 
 /* Template */
-#tabcontent {
-  color: #FFF;
-  font-size: 4em;
-  padding: 50px;
-  text-align: center;
-}
 
-#tabcontent.lebenslauf {
-  background-color:#c62828;
-  text-shadow: 2px 2px 2px #000;
-}
-#tabcontent.bildungsweg {
-  background-color:#2e7d32;
-  text-shadow: 2px 2px 2px #000;
-}
-
-#tabcontent.berufserfahrung {
-  background-color:#2962ff;
-  text-shadow: 2px 2px 2px #000;
-}
-
-#tabcontent.kontaktdaten {
-  background-color:#e65100;
-  text-shadow: 2px 2px 2px #000;
-}
-
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-body[data-tab=lebenslauf] .tablink.lebenslauf {
-  background-color:#c62828;
-}
-
-body[data-tab=bildungsweg] .tablink.bildungsweg {
-  background-color:#2e7d32;
-}
-
-body[data-tab=berufserfahrung] .tablink.berufserfahrung {
-  background-color:#2962ff;
-}
-
-body[data-tab=kontaktdaten] .tablink.kontaktdaten {
-  background-color:#e65100;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-main {
-  max-width: 1280px;
-  background: #FFF;
-  margin: 4em auto 0;
-  padding: 16px;
+header {
+  height: 256px;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-.first-heading {
-  margin-top: 0px;
+header .dots {
+  background-image: -webkit-radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px),
+                    -webkit-radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px);
+  background-image: -moz-radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px),
+                    -moz-radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px);
+  background-image: -o-radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px),
+                    -o-radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px),
+                    radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px);
+  background-position: 0 0, 10px 10px;
+  background-size:     20px 20px;
+  height:              100%;
+  position:            absolute;
+  width:               100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+header.lebenslauf {
+  background-image: -webkit-linear-gradient(315deg,#6A0D91, #B57EDC);
+  background-image: -moz-linear-gradient(315deg,#6A0D91, #B57EDC);
+  background-image: -o-linear-gradient(315deg,#6A0D91, #B57EDC);
+  background-image: linear-gradient(315deg,#6A0D91, #B57EDC);
+}
+
+header.bildungsweg {
+  background-image: -webkit-linear-gradient(315deg,#2e7d32,#C3E956);
+  background-image: -moz-linear-gradient(315deg,#2e7d32,#C3E956);
+  background-image: -o-linear-gradient(315deg,#2e7d32,#C3E956);
+  background-image: linear-gradient(315deg,#2e7d32,#C3E956);
+}
+
+header.berufserfahrung {
+  background-image: -webkit-linear-gradient(315deg,#4682B4,#ADD8E6);
+  background-image: -moz-linear-gradient(315deg,#4682B4,#ADD8E6);
+  background-image: -o-linear-gradient(315deg,#4682B4,#ADD8E6);
+  background-image: linear-gradient(315deg,#4682B4,#ADD8E6);
+}
+
+header.kontaktdaten {
+  background-image: -webkit-linear-gradient(315deg,#D32F2F,#F57C7C);
+  background-image: -moz-linear-gradient(315deg,#D32F2F,#F57C7C);
+  background-image: -o-linear-gradient(315deg,#D32F2F,#F57C7C);
+  background-image: linear-gradient(315deg,#D32F2F,#F57C7C);
+}
+
+#tabtitle {
+  color: #FFF;
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 2px #000;
+  height: 192px;
+  z-index: 2;
+}
+
+header > nav {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 64px;
+  z-index: 2;
+  position: relative;
+}
+
+.tablink {
+  flex-grow: 1;
+  transition: all 0.2s ease;
+}
+
+.tablink:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.tablink a {
+  display: block;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.75);
+  transition: all 0.2s ease;
+}
+
+body[data-tab=lebenslauf] .tablink.lebenslauf {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.25));
+}
+
+body[data-tab=lebenslauf] .tablink a{
+  color: rgba(255, 255, 255, 0.75);
+}
+
+body[data-tab=bildungsweg] .tablink.bildungsweg {
+  background-color: transparent;
+}
+
+body[data-tab=berufserfahrung] .tablink.berufserfahrung {
+  background-color: transparent;
+}
+
+body[data-tab=kontaktdaten] .tablink.kontaktdaten {
+  background-color: transparent;
+}
+
+main {
+  max-width: 1280px;
+  background: #FFF;
+  margin: 4em auto 0;
+  padding: 32px 16px;
+  position: relative;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 24px;
 }
 
 /* Lebenslauf */
+section {
+  padding-bottom: 3rem;
+  font-size: 1.25rem;
+}
+
+section h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+  padding: 0 16px 4px;
+}
+
+section h3 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  padding: 0 16px 4px;
+}
+
+body[data-tab=lebenslauf] section h2,
+body[data-tab=lebenslauf] section h3 {
+  border-bottom: 1px dashed #6A0D91;
+}
+
+body[data-tab=bildungsweg] section h3 {
+  border-bottom: 1px dashed #2e7d32;
+}
+
+body[data-tab=berufserfahrung] section h3 {
+  border-bottom: 1px dashed #4682B4;
+}
+
+body[data-tab=kontaktdaten] section h3 {
+  border-bottom: 1px dashed #D32F2F;
+}
+
+section .sectioncontent {
+  padding: 0 16px;
+}
+
 table tr > td:first-child {
    width: 300px;
  }
 
-footer {
-  padding: 8px 0 16px;
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 0.87em;
-  text-align: center;
-}
-
 .bewerbungsbild {
-  border: 1px solid #ddd;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 .img-wrapper {
-  float: right;
-  padding: 3px;
-  max-width: 200px;
+  padding: 16px;
+  background-color: #ffffff;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  max-width: 320px;
   max-height: 100%;
 }
 
@@ -313,4 +366,12 @@ footer {
 
 img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* Fußzeile */
+footer {
+  padding: 32px 0 8px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.9rem;
+  text-align: center;
 }

@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="de" dir="ltr">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicole Cristina Bittner</title>
+    <meta name="description" content="Personal website of Nicole Cristian Bittner." />
+    <meta name="keywords" content="Resume, Nicole, Cristina, Bittner" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="template.css" />
   </head>
   <body data-tab="lebenslauf">
     <header>
-      <div id="tabcontent"></div>
-      <button class="tablink lebenslauf" data-target="lebenslauf">Lebenslauf</button>
-      <button class="tablink bildungsweg" data-target="bildungsweg">Bildungsweg</button>
-      <button class="tablink berufserfahrung" data-target="berufserfahrung">Berufserfahrung</button>
-      <button class="tablink kontaktdaten" data-target="kontaktdaten">Kontaktdaten</button>
+      <h1 id="tabtitle"></h1>
+      <div class="dots"></div>
+      <nav>
+        <ul>
+          <li class="tablink lebenslauf" data-target="lebenslauf"><a>Lebenslauf</a></li>
+          <li class="tablink bildungsweg" data-target="bildungsweg"><a>Bildungsweg</a></li>
+          <li class="tablink berufserfahrung" data-target="berufserfahrung"><a>Berufserfahrung</a></li>
+          <li class="tablink kontaktdaten" data-target="kontaktdaten"><a>Kontaktdaten</a></li>
+        </ul>
+      </nav>
     </header>
     <main id="content"></main>
     <footer class="clr">
-      Nicole Cristina Bittner - nicolecbittner@gmail.com - +49 1522 3786767
+      <p>Nicole Cristina Bittner - nicolecbittner@gmail.com - +49 1522 3786767</p>
     </footer>
   </body>
   <script src="template.js"></script>
