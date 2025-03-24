@@ -217,6 +217,13 @@ header.kontaktdaten {
   background-image: linear-gradient(315deg,#D32F2F,#F57C7C);
 }
 
+header.noten {
+  background-image: -webkit-linear-gradient(315deg,#0055CC,#FFCC00);
+  background-image: -moz-linear-gradient(315deg,#0055CC,#FFCC00);
+  background-image: -o-linear-gradient(315deg,#0055CC,#FFCC00);
+  background-image: linear-gradient(315deg,#0055CC,#FFCC00);
+}
+
 #tabtitle {
   color: #FFF;
   font-size: 4em;
@@ -330,6 +337,8 @@ body[data-tab=kontaktdaten] section h3 {
   border-bottom: 1px dashed #D32F2F;
 }
 
+body [data-tab=noten]
+
 section .sectioncontent {
   padding: 0 16px;
 }
@@ -367,6 +376,36 @@ table tr > td:first-child {
 
 img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* Noten */
+.gleiderung li {
+  list-style: none;
+}
+
+.schriftlich {
+  color: #0055CC;
+}
+
+.praktisch {
+  color: #FFCC00;
+}
+
+.demnaechst {
+  color: #424242;
+}
+
+#noten-table {
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.iregulat {
+  background-color: #F4F4F4;
+}
+
+.regular {
+  background-color: #757575;
 }
 
 /* Fußzeile */
