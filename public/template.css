@@ -289,6 +289,10 @@ body[data-tab=kontaktdaten] .tablink.kontaktdaten {
   background-color: transparent;
 }
 
+body[data-tab=noten] .tablink.noten {
+	background-color: transparent;
+}
+
 main {
   max-width: 1280px;
   background: #FFF;
