@@ -383,33 +383,9 @@ img:hover {
 }
 
 /* Noten */
-.gleiderung li {
-  list-style: none;
-}
-
-.schriftlich {
-  color: #0055CC;
-}
-
-.praktisch {
-  color: #FFCC00;
-}
-
-.demnaechst {
-  color: #424242;
-}
-
 #noten-table {
   width: 80%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.iregulat {
-  background-color: #F4F4F4;
-}
-
-.regular {
-  background-color: #757575;
 }
 
 /* Fußzeile */
